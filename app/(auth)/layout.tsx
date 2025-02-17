@@ -7,13 +7,15 @@ type LayoutProps = {
 
 const Layout: React.FC<LayoutProps> = (props: LayoutProps): React.ReactElement => {
     return (
-        <div className={'flex min-h-screen bg-blue-100 p-3'}>
-            <section className={'flex-1 p-10 text-white'}>
-                <div className={'max-w-xl'}>
-                    <h1>Welcome to StoreIt!</h1>
+        <div className={'flex min-h-screen bg-blue-100 p-3 lg:justify-between'}>
+            <section className={'hidden w-1/2 flex-1 items-center justify-center p-10 text-white lg:flex xl:w-2/5'}>
+                <div className={'flex max-w-xl flex-col space-y-5'}>
+                    <h1 className={'h1'}>Welcome to StoreIt!</h1>
+                    <p className={'body-1'}>
+                        Store your files securely and access them from anywhere.
+                        Sign in to continue or create a new account in just a few steps.
+                    </p>
 
-                    Store your files securely and access them from anywhere.
-                    Sign in to continue or create a new account in just a few steps.
                     <img
                         src={'/illustration.svg'}
                         alt={'StoreIt Logo'}
@@ -21,7 +23,8 @@ const Layout: React.FC<LayoutProps> = (props: LayoutProps): React.ReactElement =
                     />
                 </div>
             </section>
-            <section className={'w-[600px] rounded-2xl bg-white p-10'}>
+
+            <section className={'mx-auto w-[600px] rounded-2xl bg-white p-10 transition-all duration-300'}>
                 {props.children}
                 <FolderIcon className={'size-6'} />
             </section>
