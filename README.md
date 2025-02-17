@@ -9,6 +9,11 @@ StoreIt is a web application inspired by Google Drive, created as a demonstratio
 - **TypeScript**
 - **Tailwind CSS**
 
+## 🎨 Illustrations & Icons
+
+- All **illustrations** used in this project are from [unDraw](https://undraw.co/).
+- All **icons** used in this project are from [Iconsax](https://iconsax.io/).
+
 ---
 
 ## ℹ️ Disclaimer
@@ -30,6 +35,11 @@ StoreIt je webová aplikace inspirovaná Google Drive, vytvořená jako demonstr
 - **TypeScript**
 - **Tailwind CSS**
 
+## 🎨 Ilustrace a ikony
+
+- Všechny **ilustrace** použité v tomto projektu pocházejí z [unDraw](https://undraw.co/).
+- Všechny **ikony** použité v tomto projektu pocházejí z [Iconsax](https://iconsax.io/).
+
 ---
 
 ## ℹ️ Prohlášení
@@ -37,4 +47,3 @@ StoreIt je webová aplikace inspirovaná Google Drive, vytvořená jako demonstr
 Tento projekt byl vytvořen **pouze za účelem demonstrace mých schopností jako programátora a pro vzdělávací účely**.  
 Není určen k reálnému nasazení ani ke komerčnímu využití.  
 Jakákoli podobnost s existujícími službami je čistě náhodná a projekt nemá žádnou spojitost s Google Drive nebo jinými cloudovými platformami.
-
