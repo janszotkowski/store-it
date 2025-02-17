@@ -44,3 +44,10 @@
         @apply text-[10px] leading-[14px] font-normal;
     }
 }
+
+@layer base {
+  :root {
+
+        --radius: 0.5rem
+    }
+}
