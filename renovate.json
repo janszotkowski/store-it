@@ -1,28 +1,31 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base"],
-  "prConcurrentLimit": 1,
+  "prConcurrentLimit": 2,
   "prHourlyLimit": 1,
   "packageRules": [
     {
       "matchDepTypes": ["devDependencies"],
       "matchUpdateTypes": ["patch"],
       "schedule": ["on Sunday night"],
-      "automerge": true
+      "automerge": true,
+      "stabilityDays": 3
     },
     {
       "matchDepTypes": ["devDependencies"],
       "matchUpdateTypes": ["minor", "major"],
       "schedule": ["on Sunday night"],
       "groupName": "Weekly DevDependencies Update",
-      "maxPackageUpdates": 5
+      "stabilityDays": 3,
+      "prCreation": "not-pending"
     },
     {
       "matchDepTypes": ["dependencies"],
       "matchUpdateTypes": ["minor", "patch"],
       "groupName": "Monthly Dependencies Update",
       "schedule": ["on the first Monday of the month"],
-      "maxPackageUpdates": 5
+      "stabilityDays": 3,
+      "prCreation": "not-pending"
     },
     {
       "dependencyDashboard": true
