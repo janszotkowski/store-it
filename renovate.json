@@ -27,6 +27,6 @@
       "schedule": ["first monday of the month"],
       "stabilityDays": 3,
       "prCreation": "not-pending"
-    },
+    }
   ]
 }
