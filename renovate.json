@@ -3,18 +3,19 @@
   "extends": ["config:base"],
   "prConcurrentLimit": 2,
   "prHourlyLimit": 1,
+  "dependencyDashboard": true,
   "packageRules": [
     {
       "matchDepTypes": ["devDependencies"],
       "matchUpdateTypes": ["patch"],
-      "schedule": ["on Sunday night"],
+      "schedule": ["every sunday"],
       "automerge": true,
       "stabilityDays": 3
     },
     {
       "matchDepTypes": ["devDependencies"],
       "matchUpdateTypes": ["minor", "major"],
-      "schedule": ["on Sunday night"],
+      "schedule": ["every sunday"],
       "groupName": "Weekly DevDependencies Update",
       "stabilityDays": 3,
       "prCreation": "not-pending"
@@ -23,12 +24,9 @@
       "matchDepTypes": ["dependencies"],
       "matchUpdateTypes": ["minor", "patch"],
       "groupName": "Monthly Dependencies Update",
-      "schedule": ["on the first Monday of the month"],
+      "schedule": ["first monday of the month"],
       "stabilityDays": 3,
       "prCreation": "not-pending"
     },
-    {
-      "dependencyDashboard": true
-    }
   ]
 }
