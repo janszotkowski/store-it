@@ -24,7 +24,7 @@
       "matchDepTypes": ["dependencies"],
       "matchUpdateTypes": ["minor", "patch"],
       "groupName": "Monthly Dependencies Update",
-      "schedule": ["first monday of the month"],
+      "schedule": ["before 3am on the first Monday of the month"],
       "stabilityDays": 3,
       "prCreation": "not-pending"
     }
