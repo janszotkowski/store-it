@@ -19,8 +19,7 @@
         "before 3am on Monday"
       ],
       "automerge": true,
-      "minimumReleaseAge": "3 days",
-      "versioning": "widen"
+      "minimumReleaseAge": "3 days"
     },
     {
       "matchDepTypes": [
@@ -35,8 +34,7 @@
       ],
       "groupName": "Weekly DevDependencies Update",
       "minimumReleaseAge": "3 days",
-      "prCreation": "not-pending",
-      "versioning": "widen"
+      "prCreation": "not-pending"
     },
     {
       "matchDepTypes": [
@@ -51,8 +49,7 @@
         "before 3am on the first day of the month"
       ],
       "minimumReleaseAge": "3 days",
-      "prCreation": "not-pending",
-      "versioning": "widen"
+      "prCreation": "not-pending"
     }
   ]
 }
