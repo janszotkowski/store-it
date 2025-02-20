@@ -9,6 +9,16 @@ StoreIt is a web application inspired by Google Drive, created as a demonstratio
 - **TypeScript**
 - **Tailwind CSS**
 
+## 🔄 Automated Dependency Updates
+
+- This project uses **Renovate** to keep dependencies up to date.  
+  Renovate automatically creates pull requests for dependency updates, ensuring that the project stays secure and up to date.
+
+## ⚡ Pre-commit Hook with Husky
+
+- This project uses **Husky** to enforce code quality.  
+  Before each commit, Husky runs **linting and formatting** to prevent bad code from being committed.
+
 ## 🎨 Illustrations & Icons
 
 - All **illustrations** used in this project are from [unDraw](https://undraw.co/).
@@ -34,6 +44,16 @@ StoreIt je webová aplikace inspirovaná Google Drive, vytvořená jako demonstr
 - **React**
 - **TypeScript**
 - **Tailwind CSS**
+
+## 🔄 Automatické aktualizace závislostí
+
+- Tento projekt používá **Renovate** pro pravidelné aktualizace závislostí.  
+  Renovate automaticky vytváří pull requesty s aktualizacemi, čímž udržuje projekt bezpečný a aktuální.
+
+## ⚡ Pre-commit Hook s Husky
+
+- Tento projekt používá **Husky** pro vynucení kvality kódu.  
+  Před každým commitem Husky automaticky spustí **lintování a formátování**, aby se zabránilo zanesení nekvalitního kódu.
 
 ## 🎨 Ilustrace a ikony
 
