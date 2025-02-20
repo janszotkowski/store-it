@@ -12,7 +12,7 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "app/**/*.{js,jsx,ts,tsx}": "eslint --fix"
+    "./**/*.{js,jsx,ts,tsx}": "eslint --fix"
   },
   "dependencies": {
     "@svgr/webpack": "8.1.0",
