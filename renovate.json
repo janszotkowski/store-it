@@ -7,6 +7,7 @@
   "prConcurrentLimit": 1,
   "prHourlyLimit": 1,
   "dependencyDashboard": true,
+  "automerge": false,
   "packageRules": [
     {
       "matchDepTypes": [
