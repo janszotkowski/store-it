@@ -1,7 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
+    "config:recommended",
+    ":semanticCommits"
   ],
   "timezone": "Europe/Prague",
   "prConcurrentLimit": 1,
@@ -9,6 +10,7 @@
   "dependencyDashboard": true,
   "automerge": false,
   "stabilityDays": 14,
+  "rangeStrategy": "pin",
   "packageRules": [
     {
       "matchDepTypes": [
@@ -21,7 +23,10 @@
         "before 3am on Monday"
       ],
       "automerge": true,
-      "rangeStrategy": "pin"
+      "labels": [
+        "patch",
+        "dev"
+      ]
     },
     {
       "matchDepTypes": [
@@ -36,7 +41,10 @@
       ],
       "groupName": "Weekly DevDependencies Update",
       "prCreation": "not-pending",
-      "rangeStrategy": "pin"
+      "labels": [
+        "minor-major",
+        "dev"
+      ]
     },
     {
       "matchDepTypes": [
@@ -51,7 +59,43 @@
         "before 3am on the first day of the month"
       ],
       "prCreation": "not-pending",
-      "rangeStrategy": "pin"
+      "labels": [
+        "minor-patch",
+        "prod"
+      ]
+    },
+    {
+      "matchDepTypes": [
+        "dependencies",
+        "devDependencies"
+      ],
+      "matchUpdateTypes": [
+        "patch",
+        "minor",
+        "major"
+      ],
+      "matchSourceUrlPrefixes": [
+        "https://github.com/advisories"
+      ],
+      "automerge": false,
+      "schedule": [
+        "at any time"
+      ],
+      "labels": [
+        "security",
+        "urgent"
+      ],
+      "description": "Security updates applied immediately after tests pass"
     }
-  ]
+  ],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": [
+      "before 3am on Monday"
+    ],
+    "automerge": true,
+    "labels": [
+      "maintenance"
+    ]
+  }
 }
