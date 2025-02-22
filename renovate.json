@@ -8,6 +8,7 @@
   "prHourlyLimit": 1,
   "dependencyDashboard": true,
   "automerge": false,
+  "stabilityDays": 14,
   "packageRules": [
     {
       "matchDepTypes": [
@@ -20,7 +21,7 @@
         "before 3am on Monday"
       ],
       "automerge": true,
-      "minimumReleaseAge": "3 days"
+      "rangeStrategy": "pin"
     },
     {
       "matchDepTypes": [
@@ -34,8 +35,8 @@
         "before 3am on Monday"
       ],
       "groupName": "Weekly DevDependencies Update",
-      "minimumReleaseAge": "3 days",
-      "prCreation": "not-pending"
+      "prCreation": "not-pending",
+      "rangeStrategy": "pin"
     },
     {
       "matchDepTypes": [
@@ -49,8 +50,8 @@
       "schedule": [
         "before 3am on the first day of the month"
       ],
-      "minimumReleaseAge": "3 days",
-      "prCreation": "not-pending"
+      "prCreation": "not-pending",
+      "rangeStrategy": "pin"
     }
   ]
 }
