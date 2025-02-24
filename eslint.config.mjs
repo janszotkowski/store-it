@@ -6,7 +6,7 @@ import stylisticPlugin from '@stylistic/eslint-plugin';
 import tsParser from '@typescript-eslint/parser';
 import tsPlugin from '@typescript-eslint/eslint-plugin';
 import interfaceToTypePlugin from 'eslint-plugin-interface-to-type';
-import tailwindcssPlugin from 'eslint-plugin-tailwindcss';
+// import tailwindcssPlugin from 'eslint-plugin-tailwindcss';
 
 /**
  * @type {import('eslint').Linter.FlatConfig[]}
@@ -93,13 +93,13 @@ export default [
             'interface-to-type/prefer-type-over-interface': 'error',
         },
     },
-
-    {
-        plugins: {
-            tailwindcss: tailwindcssPlugin,
-        },
-        rules: {
-            ...tailwindcssPlugin.configs.recommended.rules,
-        },
-    },
+    //
+    // {
+    //     plugins: {
+    //         tailwindcss: tailwindcssPlugin,
+    //     },
+    //     rules: {
+    //         ...tailwindcssPlugin.configs.recommended.rules,
+    //     },
+    // },
 ];

@@ -1,5 +1,4 @@
 import * as React from 'react';
-import FolderIcon from '@/icons/folder.svg';
 
 type LayoutProps = {
     children: React.ReactNode;
@@ -26,7 +25,6 @@ const Layout: React.FC<LayoutProps> = (props: LayoutProps): React.ReactElement =
 
             <section className={'mx-auto w-[600px] rounded-2xl bg-white p-10 transition-all duration-300'}>
                 {props.children}
-                <FolderIcon className={'size-6'} />
             </section>
         </div>
     );
