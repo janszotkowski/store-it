@@ -5,88 +5,88 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --color-white: #fff;
+    --color-white: #fff;
 
-  --color-gray-10: #e6e6e6;
-  --color-gray-20: #ccc;
-  --color-gray-30: #b3b3b3;
-  --color-gray-40: #999;
-  --color-gray-50: #808080;
-  --color-gray-60: #6c6c6c;
-  --color-gray-70: #575757;
-  --color-gray-80: #434343;
-  --color-gray-90: #2e2e2e;
-  --color-gray-100: #1a1a1a;
+    --color-gray-10: #e6e6e6;
+    --color-gray-20: #ccc;
+    --color-gray-30: #b3b3b3;
+    --color-gray-40: #999;
+    --color-gray-50: #808080;
+    --color-gray-60: #6c6c6c;
+    --color-gray-70: #575757;
+    --color-gray-80: #434343;
+    --color-gray-90: #2e2e2e;
+    --color-gray-100: #1a1a1a;
 
-  --color-blue-10: #ccf1fc;
-  --color-blue-20: #99e4f9;
-  --color-blue-30: #66d6f6;
-  --color-blue-40: #33c9f3;
-  --color-blue-50: #00bbf0;
-  --color-blue-60: #049dce;
-  --color-blue-70: #097fac;
-  --color-blue-80: #0d608b;
-  --color-blue-90: #124269;
-  --color-blue-100: #162447;
+    --color-blue-10: #ccf1fc;
+    --color-blue-20: #99e4f9;
+    --color-blue-30: #66d6f6;
+    --color-blue-40: #33c9f3;
+    --color-blue-50: #00bbf0;
+    --color-blue-60: #049dce;
+    --color-blue-70: #097fac;
+    --color-blue-80: #0d608b;
+    --color-blue-90: #124269;
+    --color-blue-100: #162447;
 
-  --color-red-10: #f6cccc;
-  --color-red-20: #ec9999;
-  --color-red-30: #e36666;
-  --color-red-40: #d93333;
-  --color-red-50: #d00000;
-  --color-red-60: #b40000;
-  --color-red-70: #900;
-  --color-red-80: #7d0000;
-  --color-red-90: #620000;
-  --color-red-100: #460000;
+    --color-red-10: #f6cccc;
+    --color-red-20: #ec9999;
+    --color-red-30: #e36666;
+    --color-red-40: #d93333;
+    --color-red-50: #d00000;
+    --color-red-60: #b40000;
+    --color-red-70: #900;
+    --color-red-80: #7d0000;
+    --color-red-90: #620000;
+    --color-red-100: #460000;
 
-  --color-green-10: #cff2d3;
-  --color-green-20: #a0e5a7;
-  --color-green-30: #70d77b;
-  --color-green-40: #41ca4f;
-  --color-green-50: #11bd23;
-  --color-green-60: #0ea31e;
-  --color-green-70: #0a8a19;
-  --color-green-80: #077013;
-  --color-green-90: #03570e;
-  --color-green-100: #003d09;
+    --color-green-10: #cff2d3;
+    --color-green-20: #a0e5a7;
+    --color-green-30: #70d77b;
+    --color-green-40: #41ca4f;
+    --color-green-50: #11bd23;
+    --color-green-60: #0ea31e;
+    --color-green-70: #0a8a19;
+    --color-green-80: #077013;
+    --color-green-90: #03570e;
+    --color-green-100: #003d09;
 
-  --color-yellow-10: #fff7cc;
-  --color-yellow-20: #ffef99;
-  --color-yellow-30: #ffe766;
-  --color-yellow-40: #ffdf33;
-  --color-yellow-50: #ffd700;
-  --color-yellow-60: #dbb800;
-  --color-yellow-70: #b89800;
-  --color-yellow-80: #947900;
-  --color-yellow-90: #715900;
-  --color-yellow-100: #4d3a00;
+    --color-yellow-10: #fff7cc;
+    --color-yellow-20: #ffef99;
+    --color-yellow-30: #ffe766;
+    --color-yellow-40: #ffdf33;
+    --color-yellow-50: #ffd700;
+    --color-yellow-60: #dbb800;
+    --color-yellow-70: #b89800;
+    --color-yellow-80: #947900;
+    --color-yellow-90: #715900;
+    --color-yellow-100: #4d3a00;
 
-  --color-purple-10: #f0ccf6;
-  --color-purple-20: #e099ec;
-  --color-purple-30: #d166e3;
-  --color-purple-40: #c233d9;
-  --color-purple-50: #b300d0;
-  --color-purple-60: #9a00b4;
-  --color-purple-70: #810097;
-  --color-purple-80: #69007d;
-  --color-purple-90: #500062;
-  --color-purple-100: #370046;
+    --color-purple-10: #f0ccf6;
+    --color-purple-20: #e099ec;
+    --color-purple-30: #d166e3;
+    --color-purple-40: #c233d9;
+    --color-purple-50: #b300d0;
+    --color-purple-60: #9a00b4;
+    --color-purple-70: #810097;
+    --color-purple-80: #69007d;
+    --color-purple-90: #500062;
+    --color-purple-100: #370046;
 
-  --color-orange-10: #ffe6cc;
-  --color-orange-20: #ffcc99;
-  --color-orange-30: #ffb366;
-  --color-orange-40: #ff9933;
-  --color-orange-50: #ff8000;
-  --color-orange-60: #db6c00;
-  --color-orange-70: #b85800;
-  --color-orange-80: #944300;
-  --color-orange-90: #712f00;
-  --color-orange-100: #4d1a00;
+    --color-orange-10: #ffe6cc;
+    --color-orange-20: #ffcc99;
+    --color-orange-30: #ffb366;
+    --color-orange-40: #ff9933;
+    --color-orange-50: #ff8000;
+    --color-orange-60: #db6c00;
+    --color-orange-70: #b85800;
+    --color-orange-80: #944300;
+    --color-orange-90: #712f00;
+    --color-orange-100: #4d1a00;
 
-  --radius-lg: var(--radius);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-sm: calc(var(--radius) - 4px);
+    --radius-lg: var(--radius);
+    --radius-md: calc(var(--radius) - 2px);
+    --radius-sm: calc(var(--radius) - 4px);
 }
 
 /*
@@ -98,69 +98,89 @@
   color utility to any element that depends on these defaults.
 */
 @layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentColor);
-  }
+    *,
+    ::after,
+    ::before,
+    ::backdrop,
+    ::file-selector-button {
+        border-color: var(--color-gray-200, currentColor);
+    }
 }
 
 @utility center {
-  @apply flex items-center justify-center;
+    @apply flex items-center justify-center;
 }
 
 @utility h1 {
-  @apply text-[34px] leading-[42px] font-bold;
+    @apply text-[34px] leading-[42px] font-bold;
 }
 
 @utility h2 {
-  @apply text-[24px] leading-[36px] font-bold;
+    @apply text-[24px] leading-[36px] font-bold;
 }
 
 @utility h3 {
-  @apply text-[20px] leading-[28px] font-semibold;
+    @apply text-[20px] leading-[28px] font-semibold;
 }
 
 @utility h4 {
-  @apply text-[18px] leading-[20px] font-medium;
+    @apply text-[18px] leading-[20px] font-medium;
 }
 
 @utility h5 {
-  @apply text-[16px] leading-[24px] font-semibold;
+    @apply text-[16px] leading-[24px] font-semibold;
 }
 
 @utility subtitle-1 {
-  @apply text-[16px] leading-[24px] font-medium;
+    @apply text-[16px] leading-[24px] font-medium;
 }
 
 @utility subtitle-2 {
-  @apply text-[14px] leading-[20px] font-semibold;
+    @apply text-[14px] leading-[20px] font-semibold;
 }
 
 @utility body-1 {
-  @apply text-[16px] leading-[24px] font-normal;
+    @apply text-[16px] leading-[24px] font-normal;
 }
 
 @utility body-2 {
-  @apply text-[14px] leading-[20px] font-normal;
+    @apply text-[14px] leading-[20px] font-normal;
 }
 
 @utility button {
-  @apply text-[14px] leading-[20px] font-medium;
+    @apply text-[14px] leading-[20px] font-medium;
 }
 
 @utility caption {
-  @apply text-[12px] leading-[16px] font-normal;
+    @apply text-[12px] leading-[16px] font-normal;
 }
 
 @utility overline {
-  @apply text-[10px] leading-[14px] font-normal;
+    @apply text-[10px] leading-[14px] font-normal;
+}
+
+@utility shad-no-focus {
+    @apply outline-none ring-offset-transparent focus:ring-transparent focus:ring-offset-0 focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-transparent focus-visible:ring-offset-0;
+}
+
+@utility shad-input {
+    @apply border-none outline-none shadow-none p-0 shad-no-focus body-2;
+}
+
+@utility shad-form-item {
+    @apply flex h-[78px] flex-col justify-center rounded-xl shadow-lg px-4;
+}
+
+@utility shad-form-label {
+    @apply pt-2 body-2 w-full text-gray-90;
+}
+
+@utility shad-form-message {
+    @apply body-2 ml-4 text-red-50;
 }
 
 @layer base {
-  :root {
+    :root {
 
         --radius: 0.5rem
     }
