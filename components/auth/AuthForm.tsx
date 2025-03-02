@@ -18,6 +18,13 @@ type AuthFormProps = {
 };
 
 export const AuthForm: React.FC<AuthFormProps> = (props: AuthFormProps): React.ReactElement => {
+    const [isLoading, setIsLoading] = React.useState(false);
+    const [errorMessage, setErrorMessage] = React.useState<string | undefined>();
+
+    React.useEffect(() => {
+        setErrorMessage(undefined);
+    }, []);
+
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
@@ -30,6 +37,7 @@ export const AuthForm: React.FC<AuthFormProps> = (props: AuthFormProps): React.R
         // Do something with the form values.
         // ✅ This will be type-safe and validated.
         console.log(values);
+        setIsLoading(true);
     };
 
     return (
@@ -84,9 +92,15 @@ export const AuthForm: React.FC<AuthFormProps> = (props: AuthFormProps): React.R
                 <Button
                     type={'submit'}
                     className={'rounded-4xl p-6 w-full cursor-pointer transition-all'}
+                    disabled={isLoading}
                 >
                     Submit
                 </Button>
+
+                {
+                    errorMessage &&
+                    <p className={'error-message'}>* {errorMessage}</p>
+                }
             </form>
         </Form>
     );

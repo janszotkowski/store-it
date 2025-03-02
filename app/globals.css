@@ -179,6 +179,10 @@
     @apply body-2 ml-4 text-red-50;
 }
 
+@utility error-message {
+    @apply body-2 mx-auto w-fit rounded-xl bg-red-10 px-8 py-4 text-center text-red-50;
+}
+
 @layer base {
     :root {
 
