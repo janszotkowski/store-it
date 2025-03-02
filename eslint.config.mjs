@@ -74,13 +74,7 @@ export default [
             stylistic: stylisticPlugin,
         },
         rules: {
-            ...stylisticPlugin.configs.recommended,
-        },
-    },
-
-    {
-        ignores: ['.next'],
-        rules: {
+            ...stylisticPlugin.configs.flat,
             'stylistic/quotes': ['error', 'single', { avoidEscape: true }],
         },
     },
