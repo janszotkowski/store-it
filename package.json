@@ -34,7 +34,7 @@
     "@eslint/eslintrc": "3.3.0",
     "@eslint/js": "9.21.0",
     "@next/eslint-plugin-next": "15.2.0",
-    "@stylistic/eslint-plugin": "3.1.0",
+    "@stylistic/eslint-plugin": "4.1.0",
     "@tailwindcss/postcss": "4.0.7",
     "@types/node": "22.13.5",
     "@types/react": "19.0.10",
