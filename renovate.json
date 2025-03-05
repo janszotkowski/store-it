@@ -9,7 +9,7 @@
   "prHourlyLimit": 1,
   "dependencyDashboard": true,
   "automerge": false,
-  "stabilityDays": 14,
+  "minimumReleaseAge": "14 days",
   "rangeStrategy": "pin",
   "packageRules": [
     {
@@ -74,9 +74,6 @@
         "minor",
         "major"
       ],
-      "matchSourceUrlPrefixes": [
-        "https://github.com/advisories"
-      ],
       "automerge": false,
       "schedule": [
         "at any time"
@@ -85,7 +82,10 @@
         "security",
         "urgent"
       ],
-      "description": "Security updates applied immediately after tests pass"
+      "description": "Security updates applied immediately after tests pass",
+      "matchSourceUrls": [
+        "https://github.com/advisories{/,}**"
+      ]
     }
   ],
   "lockFileMaintenance": {
